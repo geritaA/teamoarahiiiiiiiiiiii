@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    
+<head>
+    <style>
+      body {
+        background-image: url("yo.png");
+        background-size: 45%;
+        background-position: absolute;
+      }
+    </style>
+  </head>
+  
+    <link rel="stylesheet" href="siun't.css">
+    <link rel="shorcut icon" href="abstract-1306.png">
+    <title>Generador de Mensajes de Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #7a1332;
+            margin-top: 200px;
+            font-size: 90px;
+        }
+        
+        .message {
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        
+        button {
+            margin-top: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background-color: #f7ff8a;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>I love you 💗</h1>
+    <div class="message" id="message"></div>
+    <button onclick="generarMensaje()">Pulsa el boton miamor 💖</button>
+
+    <script>
+        var mensajes_amor = [
+            "Eres muy especial para mi bobis :)",
+            "Estoy orgulloso de ti ⭐",
+            "Quiero que seas mi compañera de vida 💗",
+            "Eres la razon por la que me levanto feliS en las mañanas 🌹",
+            "Estoy para ti los buenos y los malos momentos. Pinki",
+            "Dejame ser tu compañero de vida Cariño ❤️",
+            "Tus abrazos son mi lugar seguro 💖",
+            "Eres la mujer mas hermosa 💗",
+            "Eres la persona con la que quiero pasar el resto de mi vida",
+            "TE AMO DE AQUÍ A ALLÁ ❤️‍🩹"
+        ];
+
+        function generarMensaje() {
+            var mensajeAleatorio = mensajes_amor[Math.floor(Math.random() * mensajes_amor.length)];
+            document.getElementById("message").textContent = mensajeAleatorio;
+        }
+    </script>
+</body>
+</html>
